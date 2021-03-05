@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "Ataque.hpp"
+#include "Ataque.hpp"  
 
 #pragma once
 
@@ -9,7 +9,7 @@ using namespace std;
 
 class Nokemon {
 
-	public: 
+	protected: 
 	string nombre; 
 	int vidamaxima;
 	int vidaactual; 

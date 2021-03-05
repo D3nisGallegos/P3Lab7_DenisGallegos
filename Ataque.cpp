@@ -6,6 +6,12 @@ Ataque :: Ataque(){
 	
 }
 
+Ataque :: Ataque(string n, string t, int x){
+	nombre = n; 
+	tipo = t; 
+	poder = x; 
+}
+
 string Ataque :: GETnombre(){
 	return nombre; 
 }

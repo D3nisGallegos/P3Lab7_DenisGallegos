@@ -1,13 +1,13 @@
 #include <iostream>
 #include <string>
+#include "Fuego.hpp"
 
 #pragma once
 
-class AnafreMon : public Nokemon {
+class AnafreMon : public Fuego {
 
-	
 	public: 
-	void inicializarAtaques(); 
-	
+	AnafreMon(string, int, int, int, int , int); 
+	AnafreMon();
 	
 }; 

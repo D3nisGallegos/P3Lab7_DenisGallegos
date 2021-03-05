@@ -1,0 +1,52 @@
+# Project: P3Lab7__DenisGallegos
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o Nokemon.o Ataque.o Fuego.o Hielo.o AnafreMon.o CharamuscoMon.o Hierba.o AguacateMon.o
+LINKOBJ  = main.o Nokemon.o Ataque.o Fuego.o Hielo.o AnafreMon.o CharamuscoMon.o Hierba.o AguacateMon.o
+LIBS     = -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib" -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
+CXXINCS  = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++"
+BIN      = P3Lab7__DenisGallegos.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+DEL      = C:\Program Files (x86)\Embarcadero\Dev-Cpp\devcpp.exe INTERNAL_DEL
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+Nokemon.o: Nokemon.cpp
+	$(CPP) -c Nokemon.cpp -o Nokemon.o $(CXXFLAGS)
+
+Ataque.o: Ataque.cpp
+	$(CPP) -c Ataque.cpp -o Ataque.o $(CXXFLAGS)
+
+Fuego.o: Fuego.cpp
+	$(CPP) -c Fuego.cpp -o Fuego.o $(CXXFLAGS)
+
+Hielo.o: Hielo.cpp
+	$(CPP) -c Hielo.cpp -o Hielo.o $(CXXFLAGS)
+
+AnafreMon.o: AnafreMon.cpp
+	$(CPP) -c AnafreMon.cpp -o AnafreMon.o $(CXXFLAGS)
+
+CharamuscoMon.o: CharamuscoMon.cpp
+	$(CPP) -c CharamuscoMon.cpp -o CharamuscoMon.o $(CXXFLAGS)
+
+Hierba.o: Hierba.cpp
+	$(CPP) -c Hierba.cpp -o Hierba.o $(CXXFLAGS)
+
+AguacateMon.o: AguacateMon.cpp
+	$(CPP) -c AguacateMon.cpp -o AguacateMon.o $(CXXFLAGS)

@@ -15,7 +15,8 @@ class Ataque {
 	int poder; 
 	
 	public: 
-	Ataque(); 
+	Ataque();
+	Ataque(string, string , int);
  	string GETnombre();
  	string GETtipo(); 
  	int GETpoder();
