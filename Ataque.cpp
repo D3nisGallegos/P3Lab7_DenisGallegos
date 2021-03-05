@@ -1,8 +1,8 @@
-#include "Ataque.cpp"
+#include "Ataque.hpp"
 #include <string>
 
 
-void Ataque :: Ataque(){
+Ataque :: Ataque(){
 	
 }
 
@@ -18,4 +18,3 @@ string Ataque :: GETtipo(){
 int Ataque :: GETpoder (){
 	return poder; 
 }
-

@@ -1,7 +1,11 @@
 #include <iostream>
+#include <cstring>
 #include <string>
+#include <vector>
 
 #pragma once
+
+using namespace std; 
 
 class Ataque {
 	
@@ -15,10 +19,6 @@ class Ataque {
  	string GETnombre();
  	string GETtipo(); 
  	int GETpoder();
- 	void SETnombre(string );
- 	void SETtipo(string );
- 	void SETpoder(int ); 
- 	
 	
 	
 };
