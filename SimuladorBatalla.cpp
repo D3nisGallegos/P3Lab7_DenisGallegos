@@ -49,7 +49,7 @@ void SimuladorBatalla :: SimularBatalla(){
 				cout << "Gano el generado" <<endl;
 			}
 		}else{
-			int n = noke2.GETvidaactual();
+			int n = noke2->GETvidaactual();
 			noke2->SETvidaactual(n - fin); 
 			turno = 1; 
 			if (noke2->GETvidaactual() <= 0){
