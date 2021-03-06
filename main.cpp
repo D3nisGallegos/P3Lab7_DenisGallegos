@@ -18,6 +18,7 @@ int main(int argc, char** argv) {
 	while (opcion != 2){
 		cout << "1) Simulador de batalla. " <<endl; 
 		cout << "2) Salir. " <<endl;
+		cin >> opcion; 
 		switch (opcion){
 			case 1: 
 				{
@@ -30,6 +31,7 @@ int main(int argc, char** argv) {
 					cout << "1) Tipo fuego." <<endl; 
 					cout << "2) Tipo hielo. " <<endl; 
 					cout << "3) Tipo hierba. "	<<endl; 
+					cin >> opcion2; 
 					srand(time(NULL));
 					int poder = 5 + (rand()% 5);
 					int poder2 = 5 + (rand()% 5);
